@@ -21,8 +21,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Transactional
 	@Override
 	public Employee get(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return employeeDAO.get(id);
 	}
 	@Transactional
 	@Override
@@ -33,7 +33,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Transactional
 	@Override
 	public void delete(int id) {
-		// TODO Auto-generated method stub
+		employeeDAO.delete(id);
 		
 	}
 
